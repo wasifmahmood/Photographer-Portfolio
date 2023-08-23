@@ -9,11 +9,23 @@ const Home = () => {
             <div className="Header" id="header">
                 <Header />
             </div>
-            <div style={{ position: 'static',height:'90vh',color: COLORS.secondary}}>
-                <h1 style={{verticalAlign:'middle'}}>CAPTURE YOUR</h1>
+            <div className="text"
+                style={{ height: '90vh' }}>
+                <div className="text1">
+                    <h1 className="typewriter"
+                        style={{ fontSize: '2em', lineHeight: 1.2, color: COLORS.secondary }}>
+                        <span className="a">Capture Your</span><br />
+                    </h1>
+                </div>
+                <div className="text2">
+                    <h1 className="typewriter"
+                        style={{ fontSize: '2em', lineHeight: 1.2, color: COLORS.yellow }}>
+                        <span className="b">Perfect Moments</span>
+                    </h1>
+                </div>
             </div>
         </div>
     );
 }
 
-export default Home;
+export default Home; 

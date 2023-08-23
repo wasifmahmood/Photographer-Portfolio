@@ -1,0 +1,25 @@
+.about {
+    padding: 4rem;
+}
+
+.Data {
+    width: 70%;
+    margin-right: 25px;
+}
+
+.pic {
+    width: 30%;
+
+}
+
+.img {
+    width: 100%;
+    /* object-fit: cover; */
+    border-radius: 5%;
+}
+
+hr.solid {
+    border-top: 3px solid black;
+    margin-right: 25px;
+}
+

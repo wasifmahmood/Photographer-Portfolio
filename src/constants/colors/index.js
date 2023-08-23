@@ -5,7 +5,7 @@ export const COLORS = {
 
     primary: "#000", //black
     secondary: "#FFFFFF", //white
-    
+    yellow:'#ffdb39',
 
     back:'#CDD8FD',
     grey: "#333333",
