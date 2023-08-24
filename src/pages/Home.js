@@ -14,13 +14,13 @@ const Home = () => {
                 <div className="text1">
                     <h1 className="typewriter"
                         style={{ fontSize: '2em', lineHeight: 1.2, color: COLORS.secondary }}>
-                        <span className="a">Capture Your</span><br />
+                        Capture Your<br />
                     </h1>
                 </div>
                 <div className="text2">
                     <h1 className="typewriter"
                         style={{ fontSize: '2em', lineHeight: 1.2, color: COLORS.yellow }}>
-                        <span className="b">Perfect Moments</span>
+                        Perfect Moments
                     </h1>
                 </div>
             </div>

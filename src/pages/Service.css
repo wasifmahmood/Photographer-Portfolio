@@ -1,0 +1,21 @@
+.service,
+.expertise {
+    padding: 4rem;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 70%;
+    padding-left: 10rem;
+}
+
+.icon {
+    font-size: large;
+    font-weight: bold;
+}
+.icon:hover {
+    color:white;
+  }

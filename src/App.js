@@ -1,8 +1,9 @@
 import React from "react";
 import Home from "./pages/Home";
 import About from './pages/About';
-import Fashion from "./pages/Fashion";
-
+import Portfolio from "./pages/Portfolio";
+import Service from './pages/Services';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -13,8 +14,14 @@ function App() {
       <div className="About" id='about'>
         <About />
       </div>
-      <div className="Fashion" id='fashion'>
-        <Fashion />
+      <div className="Service" id='service'>
+        <Service />
+      </div>
+      <div className="Portfolio" id='portfolio'>
+        <Portfolio />
+      </div>
+      <div className="Contact" id='contact'>
+        <Contact />
       </div>
     </>
   );

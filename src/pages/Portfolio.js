@@ -1,11 +1,11 @@
 import React from "react";
-import './Fashion.css'
+import './Portfolio.css'
 import { COLORS } from '../constants/colors';
 import logow from '../image/logo W.png';
 import logob from '../image/logo B.png';
 
 
-const Fashion = () => {
+const Portfolio = () => {
     return (
         <>
             <div className="fashion-main" style={{ backgroundColor: COLORS.primary, color: COLORS.yellow }}>
@@ -15,9 +15,9 @@ const Fashion = () => {
                     </div>
                     <div className="image-container">
                         <img className="fimg" src={logow} alt="Logo White" />
-                        <img className="fimg" src={logob} alt="Logo Black" />
+                        <img className="fimg" src={logob} alt="Logo Black" style={{backgroundColor:COLORS.secondary}}/>
                         <img className="fimg" src={logow} alt="Logo White" />
-                        <img className="fimg" src={logob} alt="Logo Black" />
+                        <img className="fimg" src={logob} alt="Logo Black" style={{backgroundColor:COLORS.secondary}}/>
 
                     </div>
                 </div>
@@ -27,9 +27,9 @@ const Fashion = () => {
                     </div>
                     <div className="image-container">
                         <img className="fimg" src={logow} alt="Logo White" />
-                        <img className="fimg" src={logob} alt="Logo Black" />
+                        <img className="fimg" src={logob} alt="Logo Black" style={{backgroundColor:COLORS.secondary}}/>
                         <img className="fimg" src={logow} alt="Logo White" />
-                        <img className="fimg" src={logob} alt="Logo Black" />
+                        <img className="fimg" src={logob} alt="Logo Black" style={{backgroundColor:COLORS.secondary}}/>
                     </div>
                 </div>
             </div>
@@ -37,4 +37,4 @@ const Fashion = () => {
     );
 }
 
-export default Fashion;
+export default Portfolio;
