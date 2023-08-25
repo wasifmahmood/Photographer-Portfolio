@@ -23,7 +23,7 @@ const Contact = () => {
                             <h2>
                                 Get In Touch With use
                             </h2>
-                            <span>For inquiries,complaints or information,you can reach us by email or using the contact address below or call the mobile number</span>
+                            <span>For inquiries,complaints or information,you can reach us by email or using the contact address below or call the mobile number.</span>
                         </div>
                         <div className="pt-5">
                             <span className="d-block">
@@ -36,7 +36,7 @@ const Contact = () => {
                                 <MdAddCall size={30}
                                     style={{ backgroundColor: COLORS.secondary, padding: '5px', borderRadius: '25px' }} />
                                 <span style={{ paddingLeft: '25px' }}>Call Us</span>
-                                <span className="d-block" style={{ paddingLeft: '55px' }}>0331-6716</span>
+                                <span className="d-block" style={{ paddingLeft: '55px' }}>0331-6716750</span>
                             </span>
                             <span className="d-block pt-4">
                                 <MdAccessTime size={30}
