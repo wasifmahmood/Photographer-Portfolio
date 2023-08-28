@@ -23,13 +23,13 @@ const About = () => {
                                 </div>
                                 <div >
                                     <h4>Email</h4>
-                                    <p>123</p>
+                                    <p>laboosstudio@gmail.com</p>
                                 </div>
                             </div>
                             <div className="col-6">
                                 <div>
                                     <h4>Instagram</h4>
-                                    <p>123</p>
+                                    <p>laboosstudio</p>
                                 </div>
                                 <div>
                                     <h4>Email</h4>

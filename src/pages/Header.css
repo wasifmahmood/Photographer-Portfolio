@@ -1,3 +1,31 @@
-.header{
+.header {
     background-color: 0%;
+}
+
+.middle a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.middle a:hover {
+    color: #ffdb39 !important;
+}
+@media (min-width:768px) {
+    .menubtn {
+        display: none;
+    }
+}
+@media (max-width: 360px) {
+    .header {
+        width: 100%;
+    }
+
+    .logo.img {
+        width: 10px;
+        height: 5px;
+    }
+
+    .middle {
+        display: none;
+    }
 }
