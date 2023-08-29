@@ -1,7 +1,9 @@
 .header {
     background-color: 0%;
 }
-
+.logo.img{
+    padding: 3rem;
+}
 .middle a {
     text-decoration: none;
     font-weight: bold;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './Portfolio.css'
 import { COLORS } from '../constants/colors';
 import F1 from '../image/fashion/F1.jpg';
@@ -13,39 +13,56 @@ import W5 from '../image/wedding/W5.jpg';
 import W6 from '../image/wedding/W6.jpg';
 import W7 from '../image/wedding/W7.jpg';
 import W8 from '../image/wedding/W8.jpg';
-import BBQ from '../image/product/BBQ.png';
-import Chicken from '../image/product/Chicken.png';
-import Fries from '../image/product/Fries.png';
-import Sticks from '../image/product/Sticks.png';
-import Grilled from '../image/product/Grilled.png';
-import Kentucky from '../image/product/Kentucky.png';
-import Smash from '../image/product/Smash.png';
-import Smokehouse from '../image/product/Smokehouse.png';
-import Smoky from '../image/product/Smoky.png';
-import Fajita from '../image/product/Fajita.png';
-import Mughalai from '../image/product/Mughalai.png';
-import SmokyCroissant from '../image/product/SmokyCroissant.png';
-import Tikka from '../image/product/Tikka.png';
-import LotusBrownie from '../image/product/LotusBrownie.png';
-import MarksMudBrownie from '../image/product/MarksMudBrownie.png';
-import MoltenLava from '../image/product/MoltenLava.png';
-import GarlicMayoFries from '../image/product/GarlicMayoFries.png';
-import sambualsauce from '../image/product/sambualsauce.png';
-import SweetAndSour from '../image/product/SweetAndSour.png';
-import ChocolateShake from '../image/product/ChocolateShake.png';
-import ChickenAlfredoFettuccine from '../image/product/ChickenAlfredoFettuccine.png';
-import BakeWhitePasta from '../image/product/BakeWhitePasta.png';
-import creamymuglaI from '../image/product/creamymuglaI.png';
-import GrilledChickenSandwich from '../image/product/GrilledChickenSandwich.png';
+import MK1 from '../image/product/mask/MK1.jpg';
+import MK2 from '../image/product/mask/MK2.jpg';
+import MK3 from '../image/product/mask/MK3.jpg';
+import MK4 from '../image/product/mask/MK4.jpg';
+import MK5 from '../image/product/mask/MK5.jpg';
+import MK6 from '../image/product/mask/MK6.jpg';
+import MK7 from '../image/product/mask/MK7.jpg';
+import MK8 from '../image/product/mask/MK8.jpg';
+import G1 from '../image/product/GC/G1.jpeg';
+import G2 from '../image/product/GC/G2.jpeg';
+import G3 from '../image/product/GC/G3.jpeg';
+import G4 from '../image/product/GC/G4.jpeg';
+import G5 from '../image/product/GC/G5.jpeg';
+import G6 from '../image/product/GC/G6.jpeg';
+import G7 from '../image/product/GC/G7.jpeg';
+import G8 from '../image/product/GC/G8.jpeg';
+import MF1 from '../image/product/momin/MF1.jpg';
+import MF2 from '../image/product/momin/MF2.jpg';
+import MF3 from '../image/product/momin/MF3.jpg';
+import MF4 from '../image/product/momin/MF4.jpg';
+import MF5 from '../image/product/momin/MF5.jpg';
+import MF6 from '../image/product/momin/MF6.jpg';
+import MF7 from '../image/product/momin/MF7.jpg';
+import MF8 from '../image/product/momin/MF8.jpg';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
 
 const Portfolio = () => {
-    
+    const images = [
+        { src: MK1, title: 'Image 1' },
+        { src: MK2, title: 'Image 2' },
+        { src: MK3, title: 'Image 3' },
+        { src: MK4, title: 'Image 4' },
+        { src: MK5, title: 'Image 5' },
+        { src: MK6, title: 'Image 6' },
+        { src: MK7, title: 'Image 7' },
+        { src: MK8, title: 'Image 8' },
+        // ...other image objects
+    ];
+     const openImageInModal = (src) => {
+        const newWindow = window.open('', '_blank');
+        newWindow.document.write(`<img src="${src}" alt="Image" />`);
+    };
+
     return (
         <>
             <div className="fashion-main p-4" style={{ backgroundColor: COLORS.primary, color: COLORS.yellow }}>
                 <div className="fashion">
-                    <div className="d-flex">
+                    <div className="fash text-center">
                         <h2>FASHION SHOTS</h2>
                     </div>
                     <div className="image-container  pt-4">
@@ -61,7 +78,7 @@ const Portfolio = () => {
                 </div>
                 <hr className='solid hr'></hr>
                 <div className="wedding p-4">
-                    <div className="d-flex">
+                    <div className="wed text-center">
                         <h2>WEDDING PHOTO</h2>
                     </div>
                     <div className="image-container  pt-4">
@@ -77,59 +94,97 @@ const Portfolio = () => {
                 </div>
                 <hr className='solid hr'></hr>
                 <div className="portfolio p-4">
-                    <div className="d-flex">
+                    <div className="port text-center">
                         <h2>Product Photography</h2>
                     </div>
                     <div className="d-flex client1 p-4">
                         <div className="clientleft">
                             <h2>Mask's Kitchen</h2>
                             <span>Marks Kitchen Is The Best Fast-Food Restaurant In Lahore, Bringing You A Variety Of Food  From Around The World.</span>
+                            <span>
+                                <a href="https://markskitchen.com.pk/">
+                                    <button type="button" className="btn btn-warning">Marks Kitchen</button>
+                                </a>
+                            </span>
                         </div>
                         <div className="d-flex clientright">
-                            <img src={Grilled} className="imgclient1" />
-                            <img src={BBQ} className="imgclient1" />
-                            <img src={Kentucky} className="imgclient1" />
-                            <img src={Chicken} className="imgclient1" />
-                            <img src={Fries} className="imgclient1" />
-                            <img src={Smash} className="imgclient1" />
-                            <img src={Sticks} className="imgclient1" />
-                            <img src={Smokehouse} className="imgclient1" />
+                            {images.map((image, index) => (
+                                <img
+                                    key={index}
+                                    src={image.src}
+                                    className="imgclient1"
+                                    alt={image.title}
+                                    onClick={() => openImageInModal(image.src)}
+                                />
+                            ))}
                         </div>
                     </div>
                     <hr className='solid hr'></hr>
                     <div className="d-flex client2 p-4" >
                         <div className="d-flex clientright">
-                            <img src={Smoky} className="imgclient1" />
-                            <img src={Fajita} className="imgclient1" />
-                            <img src={MoltenLava} className="imgclient1" />
-                            <img src={SmokyCroissant} className="imgclient1" />
-                            <img src={Tikka} className="imgclient1" />
-                            <img src={LotusBrownie} className="imgclient1" />
-                            <img src={Mughalai} className="imgclient1" />
-                            <img src={MarksMudBrownie} className="imgclient1" />
+                            <img src={G1} className="imgclient1 " />
+                            <img src={G2} className="imgclient1" />
+                            <img src={G3} className="imgclient1" />
+                            <img src={G4} className="imgclient1" />
+                            <img src={G5} className="imgclient1" />
+                            <img src={G6} className="imgclient1" />
+                            <img src={G7} className="imgclient1" />
+                            <img src={G8} className="imgclient1" />
 
                         </div>
                         <div className="clientleft">
                             <h2>Garam Chai</h2>
                             <span>Garam Chai Is The Best Fast-Food Restaurant In Lahore, Bringing You A Variety Of Food  From Around The World.</span>
+                            <span >
+                                <a href="https://www.instagram.com/garamchaipk/">
+                                    <button type="button" className="btn btn-warning">Garam Chai</button>
+                                </a>
+                            </span>
                         </div>
                     </div>
                     <hr className='solid hr'></hr>
                     <div className="d-flex client3 p-4">
                         <div className="clientleft">
-                            <h2>Momin Foods</h2>
-                            <span>Bringing a contemporary yet traditional food culture to your dinning experience.</span>
+                            <h2>Golden Dairy</h2>
+                            <span>Desi Ghee is also an excellent source of Vitamin E. Studies have shown that Vitamin E has significant antioxidant properties. Antioxidants like Vitamin E have been linked to lowering the risk of cancer, arthritis, and cataracts. Vitamin E can also help reduce the risk of heart disease.</span>
+                            <span >
+                                <a href="https://mygoldendairy.com/">
+                                    <button type="button" className="btn btn-warning">Golden Dairy</button>
+                                </a>
+                            </span>
                         </div>
                         <div className="d-flex clientright">
-                            <img src={ChickenAlfredoFettuccine} className="imgclient1" />
-                            <img src={SweetAndSour} className="imgclient1" />
-                            <img src={creamymuglaI} className="imgclient1" />
-                            <img src={GrilledChickenSandwich} className="imgclient1" />
-                            <img src={GarlicMayoFries} className="imgclient1" />
-                            <img src={BakeWhitePasta} className="imgclient1" />
-                            <img src={sambualsauce} className="imgclient1" />
-                            <img src={ChocolateShake} className="imgclient1" />
+                            <img src={MF1} className="imgclient1" />
+                            <img src={MF2} className="imgclient1" />
+                            <img src={MF3} className="imgclient1" />
+                            <img src={MF4} className="imgclient1" />
+                            <img src={MF5} className="imgclient1" />
+                            <img src={MF6} className="imgclient1" />
+                            <img src={MF7} className="imgclient1" />
+                            <img src={MF8} className="imgclient1" />
 
+                        </div>
+                    </div>
+                    <hr className='solid hr'></hr>
+                    <div className="d-flex client4 p-4">
+                        <div className="d-flex clientright">
+                            <img src={MF1} className="imgclient1" />
+                            <img src={MF2} className="imgclient1" />
+                            <img src={MF3} className="imgclient1" />
+                            <img src={MF4} className="imgclient1" />
+                            <img src={MF5} className="imgclient1" />
+                            <img src={MF6} className="imgclient1" />
+                            <img src={MF7} className="imgclient1" />
+                            <img src={MF8} className="imgclient1" />
+                        </div>
+                        <div className="clientleft">
+                            <h2>Momin FOOD</h2>
+                            <span>We are a proud suppliers of Food Masala flavors and spices. Experience the high-quality of our full range of dry products.</span>
+                            <span >
+                                <a href="https://mominfoods.com/">
+                                    <button type="button" className="btn btn-warning">Momin FOOD</button>
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </div>

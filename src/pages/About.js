@@ -11,7 +11,7 @@ const About = () => {
             <div className="about d-flex" style={{ backgroundColor: COLORS.yellow, color: COLORS.primary }}>
                 <div className="Data ">
                     <h1>ABOUT ME</h1>
-                    <p > To change font type purely with HTML, use the CSS font-family property. Set it to the value you want and place it inside a style attribute. Then add this style attribute to an HTML element, like a paragraph, heading, button, or span tag.
+                    <p >Photography is the art, application, and practice of creating images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.
                     </p><hr className='solid'></hr>
                     <div className="find">
                         <h2>FIND ME</h2>
@@ -19,7 +19,7 @@ const About = () => {
                             <div className="col-6">
                                 <div>
                                     <h4>Phone</h4>
-                                    <p>0331-6716750</p>
+                                    <p>+92331-6716750</p>
                                 </div>
                                 <div >
                                     <h4>Email</h4>
@@ -29,11 +29,19 @@ const About = () => {
                             <div className="col-6">
                                 <div>
                                     <h4>Instagram</h4>
-                                    <p>laboosstudio</p>
+                                    <p>
+                                        <a href='https://instagram.com/laboos_studio?igshid=MzRlODBiNWFlZA==' style={{textDecoration:'none',color:COLORS.primary}}>
+                                            laboosstudio
+                                        </a>
+                                    </p>
                                 </div>
                                 <div>
-                                    <h4>Email</h4>
-                                    <p>123</p>
+                                    <h4>FaceBook</h4>
+                                    <p>
+                                        <a href='https://facebook.com/laboos_studio' style={{textDecoration:'none',color:COLORS.primary}}>
+                                            laboosstudio
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>

@@ -41,7 +41,7 @@ const Header = () => {
         <div className="header d-flex justify-content-between p-4"
             style={{ color: COLORS.secondary, height: '4rem', alignItems: 'center' }}>
             <div className='logo' style={{ fontFamily: 'cursive', padding: '10px' }}>
-                <img src={logow} width="70" />
+                <img src={logow} width="100" />
             </div>
             <div className="middle d-flex" style={{ gap: '3rem' }}>
                 <a style={{ color: COLORS.yellow }} href="#about">ABOUT</a>

@@ -35,7 +35,7 @@ const Contact = () => {
             alert('Please fill all the fields before submitting.');
             return;
         }
-        const res = await fetch('https://fir-aa939-default-rtdb.firebaseio.com/userDataStore.json', {
+        const res = await fetch('https://tamoor-47bff-default-rtdb.firebaseio.com/userDataStore.json', {
             method: 'POST',
             headers: {
                 'Content-Tpye': 'application/json',
@@ -58,7 +58,7 @@ const Contact = () => {
 
         <>
             <div className="contact" style={{ backgroundColor: COLORS.yellow, color: COLORS.primary }}>
-                <div className="d-flex">
+                <div className="cont text-center">
                     <h1>
                         Contact Me
                     </h1>
@@ -73,16 +73,12 @@ const Contact = () => {
                             <span className="d-block">
                                 <MdEmail size={30}
                                     style={{ backgroundColor: COLORS.secondary, padding: '5px', borderRadius: '25px', }} />
-                                <span style={{ paddingLeft: '2rem' }}>Email :-
-                                    <span style={{ fontWeight: 'bold' }}>laboosstudio@gmail.com</span>
-                                </span>
+                                    <span style={{ paddingLeft: '2rem',fontWeight: 'bold' }}>laboosstudio@gmail.com</span>
                             </span>
                             <span className="d-block pt-4">
                                 <MdAddCall size={30}
                                     style={{ backgroundColor: COLORS.secondary, padding: '5px', borderRadius: '25px' }} />
-                                <span style={{ paddingLeft: '2rem' }}>Call Us :-
-                                    <span style={{ fontWeight: 'bold' }}>0331-6716750</span>
-                                </span>
+                                    <span style={{ paddingLeft: '2rem',fontWeight: 'bold' }}>+92331-6716750</span>
                             </span>
                             <span className="d-block pt-4">
                                 <MdAccessTime size={30}
